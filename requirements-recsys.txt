@@ -1,0 +1,8 @@
+numpy>=1.26
+scipy>=1.11
+pyarrow>=15
+scikit-learn>=1.4
+implicit>=0.7        # ALS, BPR
+torch>=2.2           # MF-BCE, T-CE/R-CE
+lightfm>=1.17        # LightFM (cần trình biên dịch C trên Windows; xem README nếu lỗi)
+tqdm>=4.66

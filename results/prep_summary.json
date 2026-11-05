@@ -1,0 +1,117 @@
+{
+  "generated_at": "2026-11-05 07:25:55 UTC",
+  "counts": {
+    "reviews_rows": 408160,
+    "reviews_unique": 353035,
+    "users": 227557,
+    "pairs": 347901,
+    "products_with_reviews": 7360,
+    "products_rows": 15338,
+    "products_unique": 15336
+  },
+  "rating_counts": {
+    "1": 5016,
+    "2": 2376,
+    "3": 5366,
+    "4": 29656,
+    "5": 310621
+  },
+  "kcore_all_pairs": {
+    "2": {
+      "users": 54656,
+      "items": 4500,
+      "pairs": 173263
+    },
+    "3": {
+      "users": 21943,
+      "items": 2931,
+      "pairs": 105637
+    },
+    "5": {
+      "users": 6235,
+      "items": 1537,
+      "pairs": 50140
+    }
+  },
+  "n_reviews_with_phone_before_scrub": 5,
+  "n_reviews_with_email_before_scrub": 2,
+  "pairs_with_multiple_reviews": 3717,
+  "cutoffs": {
+    "q_val": 0.8,
+    "q_test": 0.9,
+    "t_val": 1699293264,
+    "t_val_iso": "2023-11-06 17:54:24 UTC",
+    "t_test": 1733144322,
+    "t_test_iso": "2024-12-02 12:58:42 UTC",
+    "ts_min_iso": "2014-09-14 12:45:24 UTC",
+    "ts_max_iso": "2026-10-16 02:40:19 UTC"
+  },
+  "checks_ok": true,
+  "check_mismatches": [],
+  "splits": {
+    "all_0core": {
+      "train": {
+        "n_interactions_before_kcore": 278320,
+        "n_interactions": 278320,
+        "n_users": 198339,
+        "n_items": 3915,
+        "density": 0.00035843,
+        "median_interactions_per_user": 1.0
+      },
+      "val": {
+        "n_interactions": 29694,
+        "n_interactions_dropped_item_not_in_train": 5096,
+        "n_users": 20152,
+        "n_items": 2289,
+        "n_warm_users": 6447,
+        "n_cold_users": 13705,
+        "warm_user_ratio": 0.3199,
+        "n_warm_interactions": 11443,
+        "n_cold_interactions": 18251
+      },
+      "test": {
+        "n_interactions": 19829,
+        "n_interactions_dropped_item_not_in_train": 14962,
+        "n_users": 12672,
+        "n_items": 2257,
+        "n_warm_users": 3329,
+        "n_cold_users": 9343,
+        "warm_user_ratio": 0.2627,
+        "n_warm_interactions": 6275,
+        "n_cold_interactions": 13554
+      }
+    },
+    "all_2core": {
+      "train": {
+        "n_interactions_before_kcore": 278320,
+        "n_interactions": 121541,
+        "n_users": 42290,
+        "n_items": 2477,
+        "density": 0.00116027,
+        "median_interactions_per_user": 2.0
+      },
+      "val": {
+        "n_interactions": 28103,
+        "n_interactions_dropped_item_not_in_train": 6687,
+        "n_users": 19112,
+        "n_items": 1835,
+        "n_warm_users": 3206,
+        "n_cold_users": 15906,
+        "warm_user_ratio": 0.1677,
+        "n_warm_interactions": 6517,
+        "n_cold_interactions": 21586
+      },
+      "test": {
+        "n_interactions": 18561,
+        "n_interactions_dropped_item_not_in_train": 16230,
+        "n_users": 11866,
+        "n_items": 1795,
+        "n_warm_users": 1700,
+        "n_cold_users": 10166,
+        "warm_user_ratio": 0.1433,
+        "n_warm_interactions": 3589,
+        "n_cold_interactions": 14972
+      }
+    }
+  }
+}

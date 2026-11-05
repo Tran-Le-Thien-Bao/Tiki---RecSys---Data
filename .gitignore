@@ -1,0 +1,32 @@
+# Dữ liệu, khóa, biến môi trường — KHÔNG commit
+data/
+.env
+*.key
+*.pem
+.secrets/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+.ipynb_checkpoints/
+
+# IDE / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Kết quả lớn của thí nghiệm
+results/**/*.parquet
+
+# Kết quả theo user (dù đã băm) — chỉ commit summary.json
+results/**/per_user.parquet
+results/**/*.csv
+
+# Log, file tạm, cấu hình máy cá nhân
+*.log
+*.tmp
