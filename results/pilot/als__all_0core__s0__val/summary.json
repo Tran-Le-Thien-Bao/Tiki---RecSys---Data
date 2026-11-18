@@ -1,0 +1,21 @@
+{
+  "config": {
+    "stage": "pilot",
+    "model": "als",
+    "star": "all",
+    "k": 0,
+    "seed": 0,
+    "attack": null,
+    "attack_level": 0.0,
+    "mitigation": null,
+    "eval_split": "val",
+    "params": {}
+  },
+  "n_users": 6447,
+  "mean": {
+    "recall@10": 0.028614423607038978,
+    "ndcg@10": 0.01763004262873993,
+    "recall@20": 0.0524056998040853,
+    "ndcg@20": 0.024447135248453624
+  }
+}

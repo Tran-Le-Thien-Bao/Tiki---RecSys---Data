@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05 07:25:55 UTC",
+  "generated_at": "2026-11-18 23:00:20 UTC",
   "counts": {
     "reviews_rows": 408160,
     "reviews_unique": 353035,
@@ -111,6 +111,198 @@
         "warm_user_ratio": 0.1433,
         "n_warm_interactions": 3589,
         "n_cold_interactions": 14972
+      }
+    },
+    "all_3core": {
+      "train": {
+        "n_interactions_before_kcore": 278320,
+        "n_interactions": 66474,
+        "n_users": 15255,
+        "n_items": 1693,
+        "density": 0.00257385,
+        "median_interactions_per_user": 3.0
+      },
+      "val": {
+        "n_interactions": 25462,
+        "n_interactions_dropped_item_not_in_train": 9328,
+        "n_users": 17352,
+        "n_items": 1400,
+        "n_warm_users": 1769,
+        "n_cold_users": 15583,
+        "warm_user_ratio": 0.1019,
+        "n_warm_interactions": 4024,
+        "n_cold_interactions": 21438
+      },
+      "test": {
+        "n_interactions": 16967,
+        "n_interactions_dropped_item_not_in_train": 17824,
+        "n_users": 10807,
+        "n_items": 1399,
+        "n_warm_users": 980,
+        "n_cold_users": 9827,
+        "warm_user_ratio": 0.0907,
+        "n_warm_interactions": 2332,
+        "n_cold_interactions": 14635
+      }
+    },
+    "all_5core": {
+      "train": {
+        "n_interactions_before_kcore": 278320,
+        "n_interactions": 26190,
+        "n_users": 3585,
+        "n_items": 919,
+        "density": 0.00794934,
+        "median_interactions_per_user": 6.0
+      },
+      "val": {
+        "n_interactions": 21670,
+        "n_interactions_dropped_item_not_in_train": 13120,
+        "n_users": 14756,
+        "n_items": 828,
+        "n_warm_users": 642,
+        "n_cold_users": 14114,
+        "warm_user_ratio": 0.0435,
+        "n_warm_interactions": 1783,
+        "n_cold_interactions": 19887
+      },
+      "test": {
+        "n_interactions": 14133,
+        "n_interactions_dropped_item_not_in_train": 20658,
+        "n_users": 9088,
+        "n_items": 863,
+        "n_warm_users": 338,
+        "n_cold_users": 8750,
+        "warm_user_ratio": 0.0372,
+        "n_warm_interactions": 1021,
+        "n_cold_interactions": 13112
+      }
+    },
+    "pos45_0core": {
+      "train": {
+        "n_interactions_before_kcore": 267862,
+        "n_interactions": 267862,
+        "n_users": 190549,
+        "n_items": 3838,
+        "density": 0.00036627,
+        "median_interactions_per_user": 1.0
+      },
+      "val": {
+        "n_interactions": 28735,
+        "n_interactions_dropped_item_not_in_train": 5123,
+        "n_users": 19463,
+        "n_items": 2232,
+        "n_warm_users": 6181,
+        "n_cold_users": 13282,
+        "warm_user_ratio": 0.3176,
+        "n_warm_interactions": 11023,
+        "n_cold_interactions": 17712
+      },
+      "test": {
+        "n_interactions": 19189,
+        "n_interactions_dropped_item_not_in_train": 14322,
+        "n_users": 12201,
+        "n_items": 2182,
+        "n_warm_users": 3198,
+        "n_cold_users": 9003,
+        "warm_user_ratio": 0.2621,
+        "n_warm_interactions": 6049,
+        "n_cold_interactions": 13140
+      }
+    },
+    "pos45_2core": {
+      "train": {
+        "n_interactions_before_kcore": 267862,
+        "n_interactions": 117383,
+        "n_users": 40788,
+        "n_items": 2430,
+        "density": 0.00118431,
+        "median_interactions_per_user": 2.0
+      },
+      "val": {
+        "n_interactions": 27395,
+        "n_interactions_dropped_item_not_in_train": 6463,
+        "n_users": 18567,
+        "n_items": 1794,
+        "n_warm_users": 3092,
+        "n_cold_users": 15475,
+        "warm_user_ratio": 0.1665,
+        "n_warm_interactions": 6344,
+        "n_cold_interactions": 21051
+      },
+      "test": {
+        "n_interactions": 18025,
+        "n_interactions_dropped_item_not_in_train": 15486,
+        "n_users": 11456,
+        "n_items": 1745,
+        "n_warm_users": 1646,
+        "n_cold_users": 9810,
+        "warm_user_ratio": 0.1437,
+        "n_warm_interactions": 3489,
+        "n_cold_interactions": 14536
+      }
+    },
+    "pos45_3core": {
+      "train": {
+        "n_interactions_before_kcore": 267862,
+        "n_interactions": 64396,
+        "n_users": 14769,
+        "n_items": 1671,
+        "density": 0.00260934,
+        "median_interactions_per_user": 3.0
+      },
+      "val": {
+        "n_interactions": 24912,
+        "n_interactions_dropped_item_not_in_train": 8946,
+        "n_users": 16920,
+        "n_items": 1380,
+        "n_warm_users": 1706,
+        "n_cold_users": 15214,
+        "warm_user_ratio": 0.1008,
+        "n_warm_interactions": 3915,
+        "n_cold_interactions": 20997
+      },
+      "test": {
+        "n_interactions": 16525,
+        "n_interactions_dropped_item_not_in_train": 16986,
+        "n_users": 10466,
+        "n_items": 1367,
+        "n_warm_users": 933,
+        "n_cold_users": 9533,
+        "warm_user_ratio": 0.0891,
+        "n_warm_interactions": 2219,
+        "n_cold_interactions": 14306
+      }
+    },
+    "pos45_5core": {
+      "train": {
+        "n_interactions_before_kcore": 267862,
+        "n_interactions": 25370,
+        "n_users": 3474,
+        "n_items": 908,
+        "density": 0.00804275,
+        "median_interactions_per_user": 6.0
+      },
+      "val": {
+        "n_interactions": 21253,
+        "n_interactions_dropped_item_not_in_train": 12605,
+        "n_users": 14433,
+        "n_items": 814,
+        "n_warm_users": 625,
+        "n_cold_users": 13808,
+        "warm_user_ratio": 0.0433,
+        "n_warm_interactions": 1744,
+        "n_cold_interactions": 19509
+      },
+      "test": {
+        "n_interactions": 13806,
+        "n_interactions_dropped_item_not_in_train": 19705,
+        "n_users": 8842,
+        "n_items": 846,
+        "n_warm_users": 324,
+        "n_cold_users": 8518,
+        "warm_user_ratio": 0.0366,
+        "n_warm_interactions": 971,
+        "n_cold_interactions": 12835
       }
     }
   }

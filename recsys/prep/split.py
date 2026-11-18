@@ -1,4 +1,4 @@
-"""Chia train/val/test theo mốc thời gian toàn cục, k-core chỉ trên train, tách warm/cold (docs/DAC_TA.md mục 5.1, bước 4–7)."""
+"""Chia train/val/test theo mốc thời gian toàn cục, k-core chỉ trên train, tách warm/cold (docs/DO_AN.md mục 4.5.1, bước 4–7)."""
 from __future__ import annotations
 
 import logging

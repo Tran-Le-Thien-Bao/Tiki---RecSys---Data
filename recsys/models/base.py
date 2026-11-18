@@ -1,4 +1,4 @@
-"""Giao diện chung cho mọi mô hình gợi ý (docs/DAC_TA.md mục 5.2).
+"""Giao diện chung cho mọi mô hình gợi ý (docs/DO_AN.md mục 4.5.2).
 
 Mô hình con chỉ cần cài `_fit(R, train, item_features, seed)` và `_score(user_idx, item_idx)`.
 Phần ánh xạ id ↔ chỉ số, dựng ma trận R (có trọng số), loại sản phẩm đã xem và lấy top-K nằm ở đây.

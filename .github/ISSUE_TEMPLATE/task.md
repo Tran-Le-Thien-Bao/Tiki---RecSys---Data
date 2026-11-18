@@ -1,11 +1,11 @@
 ---
 name: Công việc
-about: Một mục trong docs/PHAN_CONG.md
+about: Một việc trong docs/DO_AN.md
 title: "[A1] "
 labels: ""
 ---
 
-**Mã:** (vd A1). Đặc tả: `docs/PHAN_CONG.md` + `docs/DAC_TA.md` mục 5.
+**Mã:** (vd A1). Đặc tả: `docs/DO_AN.md` mục 4.5 và 5.
 
 **Chờ:** #
 

@@ -1,0 +1,21 @@
+{
+  "config": {
+    "stage": "pilot",
+    "model": "itemknn",
+    "star": "all",
+    "k": 0,
+    "seed": 0,
+    "attack": null,
+    "attack_level": 0.0,
+    "mitigation": null,
+    "eval_split": "val",
+    "params": {}
+  },
+  "n_users": 6447,
+  "mean": {
+    "recall@10": 0.041457886356069534,
+    "ndcg@10": 0.024717263770805246,
+    "recall@20": 0.06764588502176258,
+    "ndcg@20": 0.032251673445757426
+  }
+}

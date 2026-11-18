@@ -1,7 +1,7 @@
 # Hệ khuyến nghị sản phẩm Tiki
 
 Đồ án chung cho IE212 (Big Data), DS300 (Hệ khuyến nghị), IE104 (Web).
-Đặc tả và quy tắc bắt buộc: `docs/DAC_TA.md`. Phân công: `docs/PHAN_CONG.md`. Quy trình nhóm: `CONTRIBUTING.md`.
+Tình trạng, phân công, đặc tả và quy tắc bắt buộc: `docs/DO_AN.md`. Quy trình nhóm: `CONTRIBUTING.md`.
 
 ## Cài đặt
 

@@ -1,6 +1,6 @@
 # Quy trình làm việc nhóm
 
-Đọc `docs/DAC_TA.md` (đặc tả, quy tắc bắt buộc) trước. Bảng phân công: `docs/PHAN_CONG.md`.
+Đọc `docs/DO_AN.md` trước: tình trạng, phân công, đặc tả và quy tắc bắt buộc đều ở đó.
 
 ## Cài đặt
 

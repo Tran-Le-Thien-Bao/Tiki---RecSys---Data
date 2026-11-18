@@ -1,6 +1,6 @@
 """Ghi kết quả một lần chạy: results/<stage>/<run_id>/{per_user.parquet, summary.json}.
 
-Chỉ ghi dạng tổng hợp + metric theo user đã băm (docs/DAC_TA.md mục 3, quy tắc 1). Mọi experiment dùng save_run.
+Chỉ ghi dạng tổng hợp + metric theo user đã băm (docs/DO_AN.md mục 4.3, quy tắc 1). Mọi experiment dùng save_run.
 """
 from __future__ import annotations
 

@@ -1,6 +1,6 @@
 """Cấu hình chung của phần recsys — NƠI DUY NHẤT chứa đường dẫn, mốc cắt, K, seed, ngưỡng gắn cờ, λ, ε.
 
-Quy tắc (docs/DAC_TA.md mục 3):
+Quy tắc (docs/DO_AN.md mục 4.3):
 - Ngưỡng gắn cờ và λ phải cố định ở đây TRƯỚC khi sinh dữ liệu tấn công; không chỉnh theo metric gợi ý.
 - Mọi lựa chọn siêu tham số dựa trên validation, không dựa trên test.
 Giá trị nào đánh dấu "TẠM" phải được chốt (và ghi ngày chốt) trước giai đoạn 2.
@@ -50,7 +50,7 @@ STAR_VARIANTS: tuple[str, ...] = ("all", "pos45")
 POS45_MIN_RATING: int = 4     # pos45: chỉ rating >= 4 là dương
 KCORE_LEVELS: tuple[int, ...] = (0, 2, 3, 5)   # 0 = không lọc; k-core chỉ áp trên train
 
-# Số liệu đã kiểm (docs/DAC_TA.md mục 2) — prep phải khớp, lệch thì dừng lại báo.
+# Số liệu đã kiểm (docs/DO_AN.md mục 4.2) — prep phải khớp, lệch thì dừng lại báo.
 EXPECTED: dict[str, int] = {
     "reviews_rows": 408_160,
     "reviews_unique": 353_035,

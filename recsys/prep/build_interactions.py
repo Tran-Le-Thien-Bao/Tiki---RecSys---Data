@@ -1,4 +1,4 @@
-"""Prep: đọc dữ liệu thô → lọc trùng, scrub → tương tác nhị phân → các bản chia (docs/DAC_TA.md mục 5.1).
+"""Prep: đọc dữ liệu thô → lọc trùng, scrub → tương tác nhị phân → các bản chia (docs/DO_AN.md mục 4.5.1).
 
 Chạy:  python -m recsys.prep.build_interactions --star all --k 0 2
 Chỉ log số liệu tổng hợp; không in nội dung review hay user_id.
@@ -171,7 +171,7 @@ def run(stars: list[str], ks: list[int], write: bool = True) -> dict:
         config.PREP_SUMMARY_PATH.parent.mkdir(parents=True, exist_ok=True)
         config.PREP_SUMMARY_PATH.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
     if mismatches:
-        raise PrepCheckError("Số liệu lệch so với docs/DAC_TA.md mục 2:\n  " + "\n  ".join(mismatches))
+        raise PrepCheckError("Số liệu lệch so với docs/DO_AN.md mục 4.2:\n  " + "\n  ".join(mismatches))
     return summary
 
 
