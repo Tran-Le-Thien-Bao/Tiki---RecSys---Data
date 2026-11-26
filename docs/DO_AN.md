@@ -2,8 +2,6 @@
 
 **Môn:** DS300 · **GVHD:** ThS. Huỳnh Văn Tín · **Nhóm 12:** Trần Lê Thiên Bảo (24520185), Huỳnh An Bình (24520193), Trần Nguyễn Nhật Bảo (24520186), Nguyễn Trần Phú Cường (24520241), Nguyễn Hồ Phúc Bảo (24520169)
 
-Đây là **file duy nhất** để theo dõi đồ án. Mục lục:
-[1. Tình trạng](#1-tình-trạng) · [2. Phân công báo cáo giữa kỳ](#2-phân-công-báo-cáo-giữa-kỳ) · [3. Số liệu cho báo cáo](#3-số-liệu-cho-báo-cáo) · [4. Đặc tả kỹ thuật](#4-đặc-tả-kỹ-thuật) · [5. Việc sau giữa kỳ](#5-việc-sau-giữa-kỳ) · [6. Tài liệu tham khảo](#6-tài-liệu-tham-khảo)
 
 ---
 
@@ -120,15 +118,6 @@ Kappa ≥ 0,6 là chấp nhận được; thấp hơn thì hai bạn thống nh�
 - [ ] Thuật ngữ thống nhất giữa các chương (user warm, phản hồi ngầm, bộ gắn cờ…).
 - [ ] Đã có output `lambda` và `kappa`; cập nhật λ vào `recsys/config.py`, đặt `TRUST_LAMBDA_IS_PROVISIONAL = False`.
 
-### Hạn
-| Mốc | Việc |
-|---|---|
-| Ngay | Thiên Bảo push `feat/pilot`; gửi dữ liệu thô, 2 file nhãn, PDF Shrestha qua kênh riêng |
-| [ngày …] | Bản nháp các chương + 2 file nhãn |
-| [ngày …] | Duyệt, sửa |
-| [ngày …] | Nộp |
-
----
 
 ## 3. Số liệu cho báo cáo
 
@@ -190,7 +179,7 @@ Train bị bỏ: 2.234 / 278.320 cặp (0-core); 1.321 / 121.541 (2-core).
 
 **Quyết định (quy tắc định trước):** giữ RQ3. Căn cứ: Popular và ItemKNN (mô hình tất định, không nhiễu seed) có Jaccard@10 < 0,9 ở cả hai bản chia và ΔNDCG@10 có CI không chứa 0 ở 0-core.
 
-**Diễn giải sơ bộ:** bỏ 0,8% tương tác đổi 11–18% top-10; bỏ tương tác bị gắn cờ làm NDCG giảm nhẹ (giả thuyết: các tương tác này tập trung vào sản phẩm vẫn được mua tiếp ở giai đoạn validation, ví dụ chiến dịch khuyến mãi) — **chưa kết luận** khi chưa có nhãn tay. NDCG tuyệt đối rất thấp (0,002–0,033) do dữ liệu cực thưa.
+**Diễn giải sơ bộ:** bỏ 0,8% tương tác làm **7–10% sản phẩm trong top-10** thay đổi ở hai mô hình tất định (trung bình giữ nguyên 9,04/10 sản phẩm với Popular và 9,34/10 với ItemKNN ở 0-core; 9,00 và 9,24 ở 2-core). Không quy đổi 1 − Jaccard thành tỉ lệ thay đổi: Jaccard 0,83 tương ứng khoảng 1 sản phẩm khác trên 10; bỏ tương tác bị gắn cờ làm NDCG giảm nhẹ (giả thuyết: các tương tác này tập trung vào sản phẩm vẫn được mua tiếp ở giai đoạn validation, ví dụ chiến dịch khuyến mãi) — **chưa kết luận** khi chưa có nhãn tay. NDCG tuyệt đối rất thấp (0,002–0,033) do dữ liệu cực thưa.
 
 ### 3.4 Bảng so sánh với Shrestha và cs. 2021
 | Khía cạnh | Shrestha và cs. 2021 | Đồ án |
@@ -284,25 +273,7 @@ Python có type hint, docstring tiếng Việt ngắn, `pathlib`, `logging` (kh�
 - Recall@K = |top-K ∩ G_u| / |G_u|. NDCG@K = DCG@K / IDCG@K, DCG@K = Σ_{k=1..K} rel_k / log₂(k + 1).
 - Jaccard = |A ∩ B| / |A ∪ B|. Hit ratio@K = tỉ lệ user thật có ≥ 1 sản phẩm mục tiêu trong top-K.
 
----
 
-## 5. Việc sau giữa kỳ
-
-| Mã | Việc | Chờ |
-|---|---|---|
-| L1 | Chốt λ, từ khóa promo, ngưỡng burst từ nhãn tay; khóa phần gắn cờ trong config | nhãn tay |
-| S1 | BPR (`models/bpr.py`) | — |
-| S2 | MF-BCE (`models/mf_bce.py`) | — |
-| S3 | LightFM (`models/lightfm_model.py`) | — |
-| S4 | `experiments/stage1.py` (144 lần), nhiều seed | S1–S3 |
-| E1 | `attacks/inject.py` | L1, S4 |
-| E2 | `mitigation/trust.py` | L1 |
-| E3 | `mitigation/denoise.py` (T-CE, R-CE) | S2 |
-| E4 | `experiments/stage2.py` (2a, 2b, 2c) | E1–E3 |
-
-Người phụ trách sẽ giao sau khi nộp giữa kỳ.
-
----
 
 ## 6. Tài liệu tham khảo
 
