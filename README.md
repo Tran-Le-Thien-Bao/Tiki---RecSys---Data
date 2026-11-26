@@ -1,6 +1,6 @@
 # Hệ khuyến nghị sản phẩm Tiki
 
-Đồ án chung cho IE212 (Big Data), DS300 (Hệ khuyến nghị), IE104 (Web).
+Đồ án chung cho IE212 (Big Data), DS300 (Hệ khuyến nghị).
 Tình trạng, phân công, đặc tả và quy tắc bắt buộc: `docs/DO_AN.md`. Quy trình nhóm: `CONTRIBUTING.md`.
 
 ## Cài đặt

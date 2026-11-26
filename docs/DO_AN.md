@@ -216,7 +216,7 @@ Các docstring trong code trỏ về mục này (ví dụ "docs/DO_AN.md mục 4
 
 ### 4.1 Đề tài và câu hỏi nghiên cứu
 Nghiên cứu **đo lường**: tương tác giả (review rác, tài khoản thuê) và độ lệch 5 sao bẻ cong các mô hình gợi ý phổ biến đến đâu trên dữ liệu Tiki, và 3 biện pháp có sẵn giảm nhẹ được bao nhiêu. Không đề xuất mô hình mới; kết quả âm là kết luận hợp lệ.
-Sản phẩm chung cho 3 môn: IE212 (PySpark, `bigdata/`), DS300 (`recsys/`), IE104 (`web/`). Mỗi cấu hình thí nghiệm là hàm thuần `run_config(cfg)` (`cfg` = `recsys.schema.RunConfig`) để chạy phân tán sau này.
+Sản phẩm chung cho 2 môn: IE212 (PySpark, `bigdata/`), DS300 (`recsys/`). Mỗi cấu hình thí nghiệm là hàm thuần `run_config(cfg)` (`cfg` = `recsys.schema.RunConfig`) để chạy phân tán sau này.
 - **RQ1 (phụ):** tấn công có làm giảm chất lượng gợi ý chung (NDCG@K, user warm) và đổi thứ hạng mô hình (Kendall tau)?
 - **RQ2 (lõi):** tấn công đẩy sản phẩm mục tiêu vào top-K được bao nhiêu (hit ratio@K, prediction shift)?
 - **RQ3 (giữ theo pilot):** bỏ tương tác nghi ngờ thật có làm top-K đổi đáng kể (Jaccard@10, ΔNDCG@10)?
